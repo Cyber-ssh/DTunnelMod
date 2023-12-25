@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-sitedwn=https://github.com/Cyber-ssh/DTunnelMod
+sitedwn=https://github.com/PhoenixxZ2023/PainelDTunnelMod
 IP=$(wget -qO- ipv4.icanhazip.com)
 [[ $(crontab -l | grep -c "ecosystem.config.js") != '0' ]] && crontab -l | grep -v 'ecosystem.config.js' | crontab -
 function os_system {
@@ -27,7 +27,7 @@ sudo apt-get upgrade -y
 sudo apt-get install nodejs -y > /dev/null 2>&1
 [[ ! -d /etc/paineldtunnel ]] && mkdir /etc/paineldtunnel
 cd /etc/paineldtunnel || exit
-wget -qO- https://raw.githubusercontent.com/Cyber-ssh/DTunnelMod/main/paineldtunnel.zip > /dev/null 2>&1
+wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/PainelDTunnelMod/main/paineldtunnel.zip > /dev/null 2>&1
 unzip -o paineldtunnel.zip > /dev/null 2>&1
 rm paineldtunnel.zip > /dev/null 2>&1
 cd || exit
@@ -52,7 +52,7 @@ cd /etc/paineldtunnel || exit && pm2 start ecosystem.config.js && cd || exit
 clear
 echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!\033[0m"
 echo ""
-echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP:81\033[0m"
+echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP\033[0m"
 echo ""
 echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mao prompt! \033[0m"; read
 cat /dev/null > ~/.bash_history && history -c
