@@ -52,7 +52,7 @@ cd /etc/paineldtunnel || exit && pm2 start ecosystem.config.js && cd || exit
 clear
 echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!\033[0m"
 echo ""
-echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP\033[0m"
+echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP:81\033[0m"
 echo ""
 echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mao prompt! \033[0m"; read
 cat /dev/null > ~/.bash_history && history -c
